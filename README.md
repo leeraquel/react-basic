@@ -1,3 +1,7 @@
+# react-basic
+
+리액트 기초설계부터 develop하면서 react 학습하기
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
