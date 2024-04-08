@@ -1,11 +1,12 @@
 import "./App.css";
-import ClassComponent from "./components/ClassComponent";
-import FunctionComponent from "./components/FunctionComponent.jsx";
+import ClassState from "./components/ClassState";
+import FunctionState from "./components/FunctionState";
+
 function App() {
   return (
     <div className="App">
-      <ClassComponent></ClassComponent>
-      <FunctionComponent></FunctionComponent>
+      <ClassState></ClassState>
+      <FunctionState></FunctionState>
     </div>
   );
 }

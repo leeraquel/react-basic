@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "노트북",
+    "price": 1000000,
+    "image": "https://blisgo.com/wp-content/uploads/elementor/thumbs/%EB%85%B8%ED%8A%B8%EB%B6%81-p0rlb5fzdufcmaoxz90rc2u2wqxpthxyy1t0qrefb4.jpg",
+    "description": "고성능 노트북입니다."
+  },
+  {
+    "id": 2,
+    "name": "스마트폰",
+    "price": 800000,
+    "image": "https://img.danawa.com/prod_img/500000/835/246/img/28246835_1.jpg?shrink=500:*&_v=20231006014641",
+    "description": "최신 스마트폰입니다."
+  },
+  {
+    "id": 3,
+    "name": "유선키보드",
+    "price": 20000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "유선 키보드입니다."
+  },
+  {
+    "id": 4,
+    "name": "블루투스 키보드",
+    "price": 30000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "사용이 편리한 무선 키보드입니다."
+  },
+  {
+    "id": 5,
+    "name": "기계식 키보드",
+    "price": 180000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "소리가 매력적인 기계식 키보드입니다."
+  },
+  {
+    "id": 6,
+    "name": "마우스",
+    "price": 50000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "편리한 이용이 가능한 마우스입니다."
+  },
+  {
+    "id": 7,
+    "name": "게이밍 마우스",
+    "price": 80000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "게이밍용 마우스입니다."
+  },
+  {
+    "id": 8,
+    "name": "32인치 모니터",
+    "price": 300000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "32인치의 모니터입니다."
+  },
+  {
+    "id": 9,
+    "name": "20인치 모니터",
+    "price": 180000,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1628010471000",
+    "description": "20인치의 키보드입니다."
+  }
+]
