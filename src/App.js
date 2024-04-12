@@ -1,12 +1,11 @@
 import "./App.css";
-import ClassState from "./components/ClassState";
-import FunctionState from "./components/FunctionState";
-
+import BasicEvent from "./components/eventHandle/BasicEvent";
+import ClickCounter from "./components/eventHandle/EventBindClass";
 function App() {
   return (
     <div className="App">
-      <ClassState></ClassState>
-      <FunctionState></FunctionState>
+      <BasicEvent></BasicEvent>
+      <ClickCounter></ClickCounter>
     </div>
   );
 }

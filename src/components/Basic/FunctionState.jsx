@@ -4,6 +4,10 @@ function FunctionState() {
   let melon = "melon";
   const [fruits, setFruits] = useState("사과");
   const [num, setNum] = useState(0);
+  const [apple, setApple] = useState("apple");
+  const [isEng, setIsEng] = useState(true);
+  const [appleTitle, setAppleTitle] = useState("한글");
+  const [number, setNumber] = useState(0);
 
   function onClick() {
     //setter는 비동기 동작이기 때문에 console찍으면 안나올 수 잇음.
@@ -33,6 +37,37 @@ function FunctionState() {
     //setter 함수에 인자로 콜백함수를 넘겨주는 거임. 함수를 통으로 셋팅해서 실행되는것
   }
 
+  function handleApple() {
+    setApple((prevApp) => {
+      if (prevApp === "apple") {
+        return "사과";
+      } else return "apple";
+    });
+  }
+
+  function handleIsApple() {
+    isEng ? setAppleTitle("ENG") : setAppleTitle("한글");
+    isEng ? setApple("사과") : setApple("apple");
+    setIsEng((prev) => {
+      return !prev;
+    });
+  }
+
+  function handlePluseTwo() {
+    setNumber((prev) => {
+      return prev + 2;
+    });
+  }
+
+  function handleMinusOne() {
+    setNumber((prev) => {
+      if (prev <= 0) {
+        alert("0보다 작을 수 없습니다.");
+        return prev;
+      } else return prev - 1;
+    });
+  }
+
   return (
     <>
       <h2>Function State로 값 변경하기</h2>
@@ -42,6 +77,19 @@ function FunctionState() {
       <button onClick={handleMelon}>멜론 바꾸기 </button>
       <p>{num}</p>
       <button onClick={handleNum}>숫자 키우기</button>
+      <br />
+      <button onClick={handleApple}>사과 or apple로 바꾸기</button>
+      <p>{apple}</p>
+      <p>boolean으로 구현하기</p>
+      <button onClick={handleIsApple}>{appleTitle}로 바꾸기</button>
+      <p>{apple}</p>
+
+      <button onClick={handlePluseTwo}> + 2 </button>
+      <button onClick={handleMinusOne}> - 1 </button>
+      <div style={{ display: "flex" }}>
+        <div style={{ fontSize: "60px" }}>{number < 8 ? "😃" : "😭"}</div>
+        <div style={{ fontSize: "60px" }}>{number}</div>
+      </div>
     </>
   );
 }
