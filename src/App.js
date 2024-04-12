@@ -1,12 +1,10 @@
 import "./App.css";
-import UseRefFunction from "./components/Hooks/UseRefFunction";
-import RefClass from "./components/Hooks/RefClass";
+import PreTest from "./components/Hooks/PreTest";
 
 function App() {
   return (
     <div className="App">
-      <UseRefFunction></UseRefFunction>
-      <RefClass></RefClass>
+      <PreTest></PreTest>
     </div>
   );
 }

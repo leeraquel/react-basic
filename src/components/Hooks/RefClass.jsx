@@ -2,6 +2,12 @@ import { Component, createRef } from "react";
 
 export default class RefClass extends Component {
   input = createRef();
+  localVar = createRef();
+  state = {
+    state: 0,
+  };
+
+  handleLocalClick() {}
 
   render() {
     return (
@@ -17,6 +23,10 @@ export default class RefClass extends Component {
           on focus btn
         </button>
         <br></br>
+        <div>this.localVar.current : {this.localVar.current}</div>
+        <div>this.state.state : {this.state.state}</div>
+        <button>localVar + 1</button>
+        <button>state + 1</button>
       </>
     );
   }
