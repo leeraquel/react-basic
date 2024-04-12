@@ -1,11 +1,12 @@
 import "./App.css";
-import BasicEvent from "./components/eventHandle/BasicEvent";
-import ClickCounter from "./components/eventHandle/EventBindClass";
+import UseRefFunction from "./components/Hooks/UseRefFunction";
+import RefClass from "./components/Hooks/RefClass";
+
 function App() {
   return (
     <div className="App">
-      <BasicEvent></BasicEvent>
-      <ClickCounter></ClickCounter>
+      <UseRefFunction></UseRefFunction>
+      <RefClass></RefClass>
     </div>
   );
 }
