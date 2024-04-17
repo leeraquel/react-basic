@@ -2,7 +2,7 @@ import "./App.css";
 import PreTest from "./components/Hooks/PreTest";
 import CustomHook from "./components/Hooks/CustomHook";
 import { useState } from "react";
-import ThemeContext from "./components/Hooks/contexts/ThemeContext";
+import { ThemeContext } from "./components/Hooks/contexts/ThemeContext";
 import Box from "./components/atoms/Box.jsx";
 
 function App() {
@@ -19,6 +19,10 @@ function App() {
         {/* 테마 컨텍스트 안에있는 프로바이터 컴포넌트로 감싸주는 거임. */}
         <Box></Box>
       </ThemeContext.Provider>
+      {/* 프로바이더 사용 없이 Box를 렌더링할 경우 컴파일 오류 발생
+      isDark 사용하는 곳부터 에러 발생
+      context api 사용해서 전역적으로 관리하는 값에 접근하는 컴포넌트는 재사용성이 떨어짐
+      재사용성이 떨어짐 -> context api 사용하기 전 해당 사항 고려 필요 */}
     </div>
   );
 }
