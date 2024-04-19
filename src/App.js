@@ -10,28 +10,26 @@ import HomePage from "./components/page/Home";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" name="main Page" element={<HomePage />} />
-          <Route exact path="/main" name="main Page" element={<Main />} />
-          <Route exact path="/pretest" name="test" element={<PreTest />} />
-          <Route
-            path="/pretest/:index"
-            name="test details"
-            element={<UseRefFunction />}
-          />
-          <Route
-            path="/products"
-            name="products"
-            element={<ProductsPage></ProductsPage>}
-          ></Route>
-          <Route
-            path="product/:productId"
-            name="product Detail"
-            element={<ProductDetailPage />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route exact path="/" name="main Page" element={<HomePage />} />
+        <Route exact path="/main" name="main Page" element={<Main />} />
+        <Route exact path="/pretest" name="test" element={<PreTest />} />
+        <Route
+          path="/pretest/:index"
+          name="test details"
+          element={<UseRefFunction />}
+        />
+        <Route
+          path="/products"
+          name="products"
+          element={<ProductsPage></ProductsPage>}
+        ></Route>
+        <Route
+          path="product/:productId"
+          name="product Detail"
+          element={<ProductDetailPage />}
+        />
+      </Routes>
     </>
   );
 }
