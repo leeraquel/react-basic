@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function PreTest() {
   // 서버에서 받아온 기존 데이터 배열을 useState로 상태 관리함
@@ -105,6 +106,7 @@ export default function PreTest() {
 
       {/* h2태그 배열  */}
       <div>{dataList}</div>
+      <Link to={`/pretest/${nextId}`}> 상세보기 </Link>
     </div>
   );
 }

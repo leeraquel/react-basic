@@ -1,4 +1,4 @@
-import UserContext from "../contexts/userContext";
+import { UserContext } from "../contexts/UserContext";
 import { useState } from "react";
 
 export default function UserProvider(props) {
