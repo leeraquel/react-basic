@@ -1,5 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
+import ModulePractice from "../stylingMethod/ModulePractice";
+import SCPractice from "../stylingMethod/SCPractice";
 
 export default function HomePage() {
   const [queryParams, setQueryParams] = useSearchParams();
@@ -18,6 +20,8 @@ export default function HomePage() {
         홈 페이지
       </h1>
       <button onClick={toggleMode}>{isDark ? "라이트모드" : "다크모드"}</button>
+      <ModulePractice />
+      <SCPractice />
     </>
   );
 }

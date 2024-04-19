@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Main from "./components/page/Main";
 import PreTest from "./components/Hooks/PreTest";
