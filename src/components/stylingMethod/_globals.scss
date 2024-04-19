@@ -1,0 +1,17 @@
+// 변수선언
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// 믹스인
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// placeholder 써보기
+%message-shared {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+// sub.scss
+@import "globals";
+
+.success-message {
+  @extend %message-shared; // Extend a placeholder selector from _globals.scss
+  border-color: $secondary-color;
+}
+
+.error-message {
+  @extend %message-shared; // Extend a placeholder selector from _globals.scss
+  border-color: red;
+}

@@ -1,0 +1,12 @@
+// main.scss
+@import "globals";
+
+body {
+  font-family: "Helvetica", sans-serif;
+  color: $primary-color; // Variable from _globals.scss
+}
+
+.header {
+  @include flex-center; // Mixin from _globals.scss
+  background-color: $secondary-color;
+}
