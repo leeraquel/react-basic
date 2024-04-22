@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import App from "./App";
 import rootReducer from "./components/store";
+import { composeWithDevTools } from "@redux-devtools/extension";
 
 // 1. 초기 사용법 숙지하기
 // function reducer(state = 0, action) {
@@ -28,7 +29,7 @@ import rootReducer from "./components/store";
 // src/store/module/countReducer.js & src/store/module/isLoggedinReducer.js
 // 각각의 state를 관리하는 reducer 파일
 // store 생성
-const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer: rootReducer }, composeWithDevTools());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
