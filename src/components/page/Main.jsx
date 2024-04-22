@@ -6,6 +6,9 @@ import Profile from "../atoms/Profile.jsx";
 import AgeProvider from "../Hooks/provider/AgeProvider.jsx";
 import UserProvider from "../Hooks/provider/UserProvider.jsx";
 import { Link } from "react-router-dom";
+import ModulePractice from "../stylingMethod/ModulePractice";
+import SCPractice from "../stylingMethod/SCPractice";
+import SassPractice from "../stylingMethod/SassPractice";
 
 export default function Main() {
   const [isDark, setIsDark] = useState(false);
@@ -31,6 +34,9 @@ export default function Main() {
           <Profile></Profile>
         </UserProvider>
       </AgeProvider>
+      <ModulePractice />
+      <SCPractice />
+      <SassPractice />
     </div>
   );
 }

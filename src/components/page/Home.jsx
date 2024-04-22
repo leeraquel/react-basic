@@ -1,15 +1,13 @@
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
-import ModulePractice from "../stylingMethod/ModulePractice";
-import SCPractice from "../stylingMethod/SCPractice";
-import SassPractice from "../stylingMethod/SassPractice";
+
+import UseAllState from "../reduxComponent/UseAllState";
+import Bank from "../reduxComponent/Bank";
+import UseToolkit from "../reduxComponent/UseToolkit";
 
 export default function HomePage() {
   const [queryParams, setQueryParams] = useSearchParams();
   const [isDark, setIsDark] = useState(false);
-
-  console.log(queryParams.get("mode"));
-  console.log(queryParams);
 
   const toggleMode = () => {
     setQueryParams(isDark ? {} : { mode: "dark" });
@@ -21,9 +19,10 @@ export default function HomePage() {
         홈 페이지
       </h1>
       <button onClick={toggleMode}>{isDark ? "라이트모드" : "다크모드"}</button>
-      <ModulePractice />
-      <SCPractice />
-      <SassPractice />
+      {/* <Counter /> */}
+      {/* <UseAllState /> */}
+      {/* <Bank /> */}
+      <UseToolkit />
     </>
   );
 }
