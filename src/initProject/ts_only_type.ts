@@ -111,3 +111,55 @@ const student1: Student = {
   age: 1,
   // age: 1, // student interface 선언 시 age 키는 없었으므로 에러 발생
 };
+
+// interface 상속
+interface baseballTeam extends Student {
+  readonly position: string;
+  height: number;
+  backNum?: number;
+  // 물음표 문법 : 있어도 없었도 문제 없는 옵셔널한 키 지정
+}
+
+const Nippert: baseballTeam = {
+  name: "Nippert",
+  isPassed: true,
+  age: 42,
+  position: "pitcher",
+  height: 203,
+  backNum: 40,
+};
+
+const LeeDaeHo: baseballTeam = {
+  name: "LeeDaeHo",
+  isPassed: true,
+  age: 41,
+  position: "first",
+  height: 194,
+};
+
+// LeeDaeHo.position = "DH";
+// reade only 속성이라서 포지션 못 바꿈 ㅋㅋ
+LeeDaeHo.isPassed = false;
+
+// ------------------------------------------------
+// TYPE 타입이라는 타입: 커스텀 타입 선언해서 사용 가능
+
+console.log("-----type-----");
+
+type Score = "A+" | "A" | "B" | "C" | "D" | "F";
+
+interface HighShcoolStudent extends Student {
+  // 이미 name, isPassed, age 키는 이미 지정됨.
+  score?: Score;
+  // key의 value 값을 '해당 interface를 사용하는 객체를' 선언할 때 지정하는 경우
+  // grade: 학년
+  [grade: number]: Score;
+  // 그레이드는 넘버타입의 키고, 그거의 발류값은 Score 타입이다. 이 뜻임.
+}
+
+const youngchul: HighShcoolStudent = {
+  name: "youngchul",
+  age: 19,
+  isPassed: false,
+  3: "A+",
+};
